@@ -1,0 +1,21 @@
+#Saludador de buenos dias y buenas tardes
+def saludador3():
+        seguir=True 
+        while(seguir==True):
+              num=int(input("que hora es?"))
+         
+              if(num<=0 or num>=24):
+                 print("hora erronea")
+                 seguir=True
+              else:
+                  seguir=False
+                  if(num>=6 and num<=12):
+                     print("Buenos dias")#Rama del verdadero
+           
+                  else:
+                       if(num>12 and num<20):
+                          print("Buenas tardes")#Rama del falso
+                       else:
+                            print("Buenas noches")
+     
+saludador3()
