@@ -1,0 +1,20 @@
+#cajero
+def cajero():
+
+     a=num=int(input("Cuanto dinero vas a ingresar"))
+     seguir=True
+     while(seguir==True):
+           b=dinero=int(input("cuanto quieres"))
+           if(dinero<=4):
+               print("no puedes")
+               seguir=True
+           else:
+               seguir=False
+               if(dinero>=5):
+                   c="tu saldo es de"+str(a-b)
+                   print(c)
+           
+         
+                 
+     
+cajero()
