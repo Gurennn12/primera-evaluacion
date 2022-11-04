@@ -1,0 +1,28 @@
+def cajero():
+
+     saldo=int(input("Cuanto dinero vas a ingresar: "))
+     seguir=True
+     while(seguir==True):
+           dinero_extraido=int(input("cuanto quieres: "))
+           if (dinero_extraido % 5!=0 or saldo-dinero_extraido<0):
+               print("no puedes")
+               seguir=True
+               if(saldo-dinero_extraido<0):
+                   print("No puede sacar mas de lo que tiene")
+                   seguir=False
+           else:
+               saldo=saldo-dinero_extraido
+               print("tu saldo es de " +str(saldo))
+               si=input("seguir (S/N)?: ")
+               if(si=="S"):
+                   print("bien")
+                   seguir=True
+               else:
+                    print ("Gracias por usar este servicio")
+                    seguir=False
+                 
+                
+                
+                 
+     
+cajero()
