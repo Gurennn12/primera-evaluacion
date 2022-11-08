@@ -1,0 +1,10 @@
+palabras= H O L A \0=final de la cadena
+casillas= 0 1 2 3  4
+print(palabra{0})
+
+ASCII  Una tabla==>
+     0000  0001  0010  0011
+0000
+0001
+0010
+0011
