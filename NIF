@@ -1,0 +1,13 @@
+#dni
+def dni():
+   letras="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+   dni=int(input("dame tu dni:"))
+   resto=dni%23
+   letra=input("dame la letra:")
+    if(letra==letras[resto]):
+        print(letra)
+    else:
+        print(no puedes)
+        
+
+cajero()
