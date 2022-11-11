@@ -1,0 +1,12 @@
+# Pide una palabra y te devuelve sus letras y su longitud.Me dice cuantas vocales tiene
+def deletreo():
+    respuesta=False
+    if(letra=="a" or letra=="e" or letra=="i" or letra=="o" or letra=="u"):
+        respuesta=True
+        return
+    palabra=input("dime una palabra:")
+    for cont in range(0,len(palabra)):
+        print(palabra[cont]+"")
+    print("Tiene"+str(cont+1)+"letras")        
+                
+deletreo()
