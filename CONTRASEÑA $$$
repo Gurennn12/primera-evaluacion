@@ -1,0 +1,22 @@
+# Write Python 3 code in this online editor and run it.
+seguir=True
+while(seguir==True):
+    Password= "Aprobare"
+    if(Password.islower and Password.isupper):
+        print("Cumple el criterio de contraseña de mayus y  minus")
+    else:
+        print("no cumple criterios de mayus y minus")
+    
+        if(Password.isalpha):
+            print("No cumple los requisitos de numero")
+        else:
+            print("cumple los requisitos de numeros")
+        
+    continuar=True
+    while(continuar==True):
+        resp=int(input("Dime un numero par: "))
+        if(resp/2==1):
+            print("Lo has hecho bien")
+            continuar=False
+        else:
+            print("No es par. Vuelvo a introducirlo")
