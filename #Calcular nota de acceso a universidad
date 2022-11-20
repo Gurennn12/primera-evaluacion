@@ -1,0 +1,31 @@
+#Calcular nota de acceso a universidad
+def evau():
+        I_industrial=11
+        I_Civil=6
+        I_Diseño=11.6
+        ingles=int(input("Cual es tu nota de ingles"))
+        if(ingles>10):
+            print("no puedes")
+        else:
+            mates=int(input("Cual es tu nota de mates"))
+            if(mates>10):
+                print("no puedes")
+            else:
+                historia=int(input("Cual es tu nota de historia"))
+                if(historia>10):
+                    print("no puedes")
+                else:
+                    lengua=int(input("Cual es tu nota de Lengua"))
+                    if(lengua>10):
+                       print("no puedes")  
+                    else:
+                        c="tu nota de evau es de"+str((ingles+mates+historia+lengua)/4)
+                        print(c)
+                        nmb=int(input("Cual es tu nota media de bachiller"))
+                        t="Tu nota de acceso es de"+str((0.4*c)+(0.6*nmb))
+                        print(t)
+                        if(t>11):
+                            print("puedes ir a I_industrial o I_Diseño")
+                        else:
+                            print("puedes hacer I_Civil")
+evau()
