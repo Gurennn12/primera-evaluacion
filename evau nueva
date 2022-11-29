@@ -1,0 +1,55 @@
+# ###Calcular nota de acceso a universidad
+def evau():
+    Ponderaciones
+    matematicas=0.2
+    Fisica=0.2
+    dibujo_tecnico=0.2
+    I_industrial=11
+    I_Civil=6
+    I_Diseño=11.6
+    ingles=int(input("Cual es tu nota de ingles"))
+    if(ingles>10):
+        print("no puedes")
+    else:
+        mates=int(input("Cual es tu nota de mates"))
+        if(mates>10):
+            print("no puedes")
+        else:
+            historia=int(input("Cual es tu nota de historia"))
+            if(historia>10):
+                print("no puedes")
+            else:
+                lengua=int(input("Cual es tu nota de Lengua"))
+                if(lengua>10):
+                    print("no puedes")  
+                else:
+                    dibujotecnico=int(input("Cual es tu nota de dibujo"))
+                    c="tu nota de evau es de"+str((ingles+mates+historia+lengua)/4)
+                    print(c)
+                    nmb=int(input("Cual es tu nota media de bachiller"))
+                    t=((0.4*(ingles+mates+historia+lengua)/4)+(0.6*nmb))
+                    print(("tu nota de acceso es: "+str(t)))
+                    H=int(input("Primera asignatura realizada en la fase voluntaria"))
+                    J=int(input("Segunda asignatura realizada en la fase voluntaria"))
+                    if(ingles or mates or historia or lengua<5):
+                        print("Debes superar una nota de 5 para la nota de admision")
+                    else:
+                        M1=int(input("cual es tu nota de la primera asignatura"))
+                        M2=int(input("cual es tu nota de la segunda asinatura"))
+                        if(M1 or M2<5):
+                            print("No es una asignatura superada y no pondera")
+                        else:
+                            NotadeAdmisión=((t)+(H*M1)+(J*M2))
+                            print(("tu nota de admision:"+str(Nota de Admisión)))
+                            
+
+                            if(Notadeadmision>11):
+                                print("puedes ir a I_industrial o I_Diseño")
+                            else:
+                                print("puedes hacer I_Civil
+
+
+
+
+
+evau()
